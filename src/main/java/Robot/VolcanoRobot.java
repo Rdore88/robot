@@ -2,7 +2,26 @@ package Robot;
 
 public class VolcanoRobot {
     String status;
+    String name;
+    String location;
     int speed;
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     float temperature;
 
     public String getStatus() {
@@ -37,6 +56,8 @@ public class VolcanoRobot {
     }
 
     void showAttributes() {
+        System.out.println("Name: " + name);
+        System.out.println("Location: " + location);
         System.out.println("Status: " + status);
         System.out.println("Speed: " + speed);
         System.out.println("temperature: " + temperature);
